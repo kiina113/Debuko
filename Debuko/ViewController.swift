@@ -15,7 +15,6 @@ class ViewController: UIViewController {
     @IBOutlet weak var weight: UITextField!
     @IBOutlet weak var aim: UITextField!
     
-    //テスト　push
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
