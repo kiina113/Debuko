@@ -1,47 +1,32 @@
 //
-//  CountViewController.swift
-//  diet.app
+//  todayViewController.swift
+//  Debuko
 //
-//  Created by KINARI NISHIYAMA on 2015/02/26.
+//  Created by KINARI NISHIYAMA on 2015/02/28.
 //  Copyright (c) 2015年 KINARI NISHIYAMA. All rights reserved.
 //
 
 import UIKit
 
-class CountViewController: UIViewController {
+class todayViewController: UIViewController {
     
-    @IBOutlet var label: UILabel!
-    var number = 10
+    @IBOutlet var todayTextField : UITextField!
+    var todayWeight = 35.0
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-    label.text = "\(number)"
-        number = 10
         
-    }
-    
-    
-    @IBAction func minus (){
-        number = number - 1
-        label.text="\(number)"
-        
-        if number <= 0 {
-            
-//            var myNextViewController: UIViewController = NextViewController()
-//            
-//            // Viewの移動する.
-//            self.presentViewController(myNextViewController, animated: true, completion: nil)
-//            
-
-            performSegueWithIdentifier("clear", sender: nil)
-            
-            
-        }
+        var todayDefault = NSUserDefaults.standardUserDefaults()
+        todayDefault.setDouble(todayWeight, forKey: "todayDouble")
+        todayDefault.synchronize()
     }
 
-    
-    
+    @IBAction func tapGobt(sender: UITextField){
+        var todayDefault = NSUserDefaults.standardUserDefaults()
+        var todayWeight2: AnyObject = todayDefault.objectForKey("todayDouble")!
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

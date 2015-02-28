@@ -29,30 +29,49 @@ class ViewController: UIViewController {
         defaults.setDouble(weight, forKey: "weightDouble")
         defaults.setDouble(aim, forKey: "aimDouble")
         defaults.synchronize()
-
-           }
+                   }
     override func viewWillAppear(animated: Bool){
         //ユーザーデフォルトを用意
         var defaults = NSUserDefaults.standardUserDefaults()
         //データを読み出し
         var name2: AnyObject = defaults.objectForKey("nameString")!
         var high2: AnyObject = defaults.doubleForKey("highDouble")
-        var weghit: AnyObject = defaults.doubleForKey("weghitDouble")
+        var weghit2: AnyObject = defaults.doubleForKey("weightDouble")
         var aim2: AnyObject = defaults.doubleForKey("aimDouble")
+        
+
     }
     
     
     @IBAction func tapNextbt(sender: UITextField) {
         var defaults = NSUserDefaults.standardUserDefaults()
         defaults.setObject(sender.text, forKey: "nameString")
-        defaults.setDouble(Double(), forKey: "highDouble")
-        defaults.setDouble(Double(), forKey: "weightDouble")
-        defaults.setDouble(Double(), forKey: "aimDouble")
         defaults.synchronize()
+
     }
     
+    @IBAction func tapNextbt2(sender: UITextField){
+        var defaults = NSUserDefaults.standardUserDefaults()
+        defaults.setDouble(Double(), forKey: "highDouble")
+        defaults.synchronize()
+
+    }
     
+    @IBAction func tapNextbt3(sender: UITextField){
+        var defaults = NSUserDefaults.standardUserDefaults()
+        defaults.setDouble(Double(), forKey: "weightDouble")
+        defaults.synchronize()
+
+    }
     
+    @IBAction func tapNextbt4 (sender: UITextField){
+        var defaults = NSUserDefaults.standardUserDefaults()
+        defaults.setDouble(Double(), forKey: "aimDouble")
+        defaults.synchronize()
+
+    }
+    
+        
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

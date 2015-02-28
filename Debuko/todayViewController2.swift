@@ -1,46 +1,31 @@
 //
-//  CountViewController.swift
-//  diet.app
+//  todayViewController2.swift
+//  Debuko
 //
-//  Created by KINARI NISHIYAMA on 2015/02/26.
+//  Created by KINARI NISHIYAMA on 2015/02/28.
 //  Copyright (c) 2015年 KINARI NISHIYAMA. All rights reserved.
 //
 
 import UIKit
 
-class CountViewController: UIViewController {
+class todayViewController2: UIViewController {
     
-    @IBOutlet var label: UILabel!
-    var number = 10
+    //脱デブまでアウトレット
+    @IBOutlet weak var label: UILabel!
+    var number = 0
+    //ディフォルト
+    var defaults = NSUserDefaults.standardUserDefaults()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-    label.text = "\(number)"
-        number = 10
-        
+        label.text = "\(number)"
+        var aim2 : Double = defaults.doubleForKey("aimDouble")
+        var todayWeight : Double = defaults.doubleForKey("todayDouble")
+        label.text="\(todayWeight - aim2)"
+        println("\(todayWeight - aim2)")
     }
-    
-    
-    @IBAction func minus (){
-        number = number - 1
-        label.text="\(number)"
-        
-        if number <= 0 {
-            
-//            var myNextViewController: UIViewController = NextViewController()
-//            
-//            // Viewの移動する.
-//            self.presentViewController(myNextViewController, animated: true, completion: nil)
-//            
-
-            performSegueWithIdentifier("clear", sender: nil)
-            
-            
-        }
-    }
-
-    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

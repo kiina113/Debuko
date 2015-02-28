@@ -10,12 +10,21 @@ import UIKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-    var Person = String?()
-
+    // AppDelegate.swift
+   
+    
+    
+    
     var window: UIWindow?
 
 
-    func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+    func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool
+    {
+        // first time to launch this app
+        let defaults = NSUserDefaults.standardUserDefaults()
+        var dic = ["firstLaunch": true]
+        defaults.registerDefaults(dic)
+    
         // Override point for customization after application launch.
         return true
     }
