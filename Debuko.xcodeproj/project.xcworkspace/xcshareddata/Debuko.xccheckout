@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>0B6A8AEA-8AEC-44F7-A49F-8681FBABE0B4</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Debuko</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>E74B448B3446D550F77934018687F158F6DF7AD7</key>
+		<string>https://github.com/kiina113/Debuko.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Debuko.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>E74B448B3446D550F77934018687F158F6DF7AD7</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/kiina113/Debuko.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>E74B448B3446D550F77934018687F158F6DF7AD7</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>E74B448B3446D550F77934018687F158F6DF7AD7</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Debuko</string>
+		</dict>
+	</array>
+</dict>
+</plist>

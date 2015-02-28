@@ -4,10 +4,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--First View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="diet_app" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="FirstPage" id="vXZ-lx-hvc" customClass="FirstViewController" customModule="Debuko" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -17,37 +17,37 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BUM-Yw-ReD">
-                                <rect key="frame" x="73" y="182" width="180" height="366"/>
+                                <rect key="frame" x="106" y="215" width="109" height="223"/>
                                 <state key="normal" title="Button" image="diet-sozai.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="lqJ-GI-XWf" kind="presentation" id="2AM-dG-G5P"/>
+                                    <segue destination="lqJ-GI-XWf" kind="presentation" id="9u7-pn-cpX"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="COOKIES.png" translatesAutoresizingMaskIntoConstraints="NO" id="CQv-h5-Zi8">
-                                <rect key="frame" x="215" y="136" width="89" height="134"/>
+                                <rect key="frame" x="229" y="115" width="117" height="175"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="choko.png" translatesAutoresizingMaskIntoConstraints="NO" id="6vH-ZR-DMq">
-                                <rect key="frame" x="241" y="400" width="69" height="96"/>
+                                <rect key="frame" x="239" y="357" width="87" height="122"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="prin.ong.png" translatesAutoresizingMaskIntoConstraints="NO" id="9ee-ty-yhp">
-                                <rect key="frame" x="36" y="182" width="57" height="91"/>
+                                <rect key="frame" x="6" y="139" width="69" height="111"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="furape.png" translatesAutoresizingMaskIntoConstraints="NO" id="IY2-BM-vlU">
-                                <rect key="frame" x="253" y="283" width="65" height="86"/>
+                                <rect key="frame" x="223" y="249" width="75" height="100"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ame.png" translatesAutoresizingMaskIntoConstraints="NO" id="MG9-ia-HVf">
-                                <rect key="frame" x="30" y="440" width="56" height="32"/>
+                                <rect key="frame" x="16" y="413" width="70" height="40"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="start.png" translatesAutoresizingMaskIntoConstraints="NO" id="fQQ-Uc-hoH">
-                                <rect key="frame" x="128" y="434" width="65" height="28"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="mHn-a7-nCQ">
-                                <rect key="frame" x="19" y="0.0" width="283" height="191"/>
+                                <rect key="frame" x="128" y="189" width="65" height="28"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cake.png" translatesAutoresizingMaskIntoConstraints="NO" id="4GU-9J-2s6">
-                                <rect key="frame" x="11" y="283" width="59" height="88"/>
+                                <rect key="frame" x="33" y="258" width="65" height="98"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="mHn-a7-nCQ">
+                                <rect key="frame" x="60" y="46" width="201" height="128"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.98520777048633146" blue="0.55742435299021476" alpha="1" colorSpace="calibratedRGB"/>
@@ -61,7 +61,7 @@
         <!--View Controller-->
         <scene sceneID="Tac-95-vVk">
             <objects>
-                <viewController id="lqJ-GI-XWf" customClass="ViewController" customModule="diet_app" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Shokisettei" id="lqJ-GI-XWf" customClass="ViewController" customModule="Debuko" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="V27-7C-scB"/>
                         <viewControllerLayoutGuide type="bottom" id="Pbe-Pt-Mzb"/>
@@ -71,16 +71,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="debuko.png" translatesAutoresizingMaskIntoConstraints="NO" id="UDN-wY-xva">
-                                <rect key="frame" x="-53" y="276" width="268" height="375"/>
+                                <rect key="frame" x="-45" y="266" width="268" height="375"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ame.png" translatesAutoresizingMaskIntoConstraints="NO" id="aIi-CU-AFr">
                                 <rect key="frame" x="248" y="500" width="65" height="40"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="poteti.png" translatesAutoresizingMaskIntoConstraints="NO" id="kBc-tl-aTP">
                                 <rect key="frame" x="136" y="340" width="63" height="79"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="furape.png" translatesAutoresizingMaskIntoConstraints="NO" id="gfp-6q-sr5">
-                                <rect key="frame" x="7" y="76" width="57" height="72"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="choko.png" translatesAutoresizingMaskIntoConstraints="NO" id="a0b-g3-WAb">
                                 <rect key="frame" x="168" y="427" width="79" height="96"/>
@@ -89,7 +86,7 @@
                                 <rect key="frame" x="223" y="364" width="66" height="94"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="prin.ong.png" translatesAutoresizingMaskIntoConstraints="NO" id="smH-Cs-Nhs">
-                                <rect key="frame" x="264" y="49" width="49" height="82"/>
+                                <rect key="frame" x="255" y="49" width="49" height="82"/>
                             </imageView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="kg" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AFX-10-WfR">
                                 <rect key="frame" x="192" y="222" width="97" height="30"/>
@@ -109,17 +106,17 @@
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="身長" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DZQ-4y-Lk5">
                                 <rect key="frame" x="112" y="169" width="97" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="next"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation" returnKeyType="next"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="体重" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GZZ-4b-Ryq">
                                 <rect key="frame" x="112" y="222" width="97" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="next"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation" returnKeyType="next"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="目標体重" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ukh-MD-54Q">
                                 <rect key="frame" x="112" y="276" width="97" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="go"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation" returnKeyType="go"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ohJ-uK-7Dd">
                                 <rect key="frame" x="239" y="326" width="30" height="30"/>
@@ -133,10 +130,17 @@
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="名前" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KoJ-6q-IPW">
                                 <rect key="frame" x="112" y="118" width="97" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="words" returnKeyType="next"/>
+                                <connections>
+                                    <action selector="tapNextKey:" destination="lqJ-GI-XWf" eventType="touchUpInside" id="ZoD-re-QO6"/>
+                                    <action selector="tapNextbt:" destination="lqJ-GI-XWf" eventType="editingDidEndOnExit" id="VEW-FK-2kp"/>
+                                </connections>
                             </textField>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="shokisettei.png" translatesAutoresizingMaskIntoConstraints="NO" id="fgy-sb-De6">
                                 <rect key="frame" x="91" y="49" width="139" height="35"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="furape.png" translatesAutoresizingMaskIntoConstraints="NO" id="gfp-6q-sr5">
+                                <rect key="frame" x="16" y="59" width="57" height="72"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -144,14 +148,18 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="aim" destination="ukh-MD-54Q" id="uKU-ZS-wao"/>
+                        <outlet property="aimTextField" destination="ukh-MD-54Q" id="eqh-J5-pzc"/>
                         <outlet property="high" destination="GZZ-4b-Ryq" id="lr6-Be-K2x"/>
+                        <outlet property="highTextField" destination="DZQ-4y-Lk5" id="Y9R-2k-YED"/>
                         <outlet property="name" destination="KoJ-6q-IPW" id="3Z1-9a-g25"/>
+                        <outlet property="nameTextField" destination="KoJ-6q-IPW" id="ES8-1a-qIX"/>
                         <outlet property="weight" destination="GZZ-4b-Ryq" id="uho-oz-sYo"/>
+                        <outlet property="weightTextField" destination="GZZ-4b-Ryq" id="227-Ct-nqG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZT7-o2-a9u" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="694" y="386"/>
+            <point key="canvasLocation" x="666" y="386"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="nek-69-AOy">
@@ -345,7 +353,7 @@
         <!--Count View Controller-->
         <scene sceneID="G9V-H3-IC8">
             <objects>
-                <viewController id="t7H-F3-fj2" customClass="CountViewController" customModule="diet_app" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Training" id="t7H-F3-fj2" customClass="CountViewController" customModule="Debuko" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ld4-7a-5ch"/>
                         <viewControllerLayoutGuide type="bottom" id="DZg-vM-zph"/>
@@ -385,7 +393,7 @@
         <!--Next View Controller-->
         <scene sceneID="8lD-2V-Wck">
             <objects>
-                <viewController id="gvx-z7-FGn" customClass="NextViewController" customModule="diet_app" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="NextView" id="gvx-z7-FGn" customClass="NextViewController" customModule="Debuko" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="8bC-19-bsZ"/>
                         <viewControllerLayoutGuide type="bottom" id="pRA-Mn-bjh"/>

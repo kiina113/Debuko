@@ -10,15 +10,47 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    @IBOutlet weak var name: UITextField!
-    @IBOutlet weak var high: UITextField!
-    @IBOutlet weak var weight: UITextField!
-    @IBOutlet weak var aim: UITextField!
+    @IBOutlet weak var nameTextField: UITextField!
+    var name = "名前"
+    @IBOutlet weak var highTextField: UITextField!
+    var high = 150.0
+    @IBOutlet weak var weightTextField: UITextField!
+    var weight = 35.0
+    @IBOutlet weak var aimTextField: UITextField!
+    var aim = 30.0
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        // Do any additional setup after loading the view, typically from a nib.        
+        var defaults = NSUserDefaults.standardUserDefaults()
+        defaults.setObject(name, forKey:"nameString")
+        defaults.setDouble(high, forKey: "highDouble")
+        defaults.setDouble(weight, forKey: "weightDouble")
+        defaults.setDouble(aim, forKey: "aimDouble")
+        defaults.synchronize()
+
+           }
+    override func viewWillAppear(animated: Bool){
+        //ユーザーデフォルトを用意
+        var defaults = NSUserDefaults.standardUserDefaults()
+        //データを読み出し
+        var name2: AnyObject = defaults.objectForKey("nameString")!
+        var high2: AnyObject = defaults.doubleForKey("highDouble")
+        var weghit: AnyObject = defaults.doubleForKey("weghitDouble")
+        var aim2: AnyObject = defaults.doubleForKey("aimDouble")
     }
+    
+    
+    @IBAction func tapNextbt(sender: UITextField) {
+        var defaults = NSUserDefaults.standardUserDefaults()
+        defaults.setObject(sender.text, forKey: "nameString")
+        defaults.setDouble(Double(), forKey: "highDouble")
+        defaults.setDouble(Double(), forKey: "weightDouble")
+        defaults.setDouble(Double(), forKey: "aimDouble")
+        defaults.synchronize()
+    }
+    
     
     
     override func didReceiveMemoryWarning() {
