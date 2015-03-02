@@ -486,6 +486,14 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="moji.png" translatesAutoresizingMaskIntoConstraints="NO" id="KdC-8O-Mmj">
                                 <rect key="frame" x="78" y="118" width="164" height="32"/>
                             </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="今日の体重" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="45m-wB-RoR">
+                                <rect key="frame" x="78" y="177" width="110" height="59"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="tapGobt:" destination="zUd-xD-ns5" eventType="editingDidEndOnExit" id="AAG-va-6MV"/>
+                                </connections>
+                            </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SOm-e4-WYS">
                                 <rect key="frame" x="34" y="28" width="34" height="30"/>
                                 <state key="normal" title="back">
@@ -496,19 +504,11 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="kg" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fec-Wj-oc8">
-                                <rect key="frame" x="205" y="202" width="37" height="26"/>
+                                <rect key="frame" x="205" y="185" width="37" height="43"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="今日の体重" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="45m-wB-RoR">
-                                <rect key="frame" x="78" y="185" width="110" height="59"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <textInputTraits key="textInputTraits"/>
-                                <connections>
-                                    <action selector="tapGobt:" destination="zUd-xD-ns5" eventType="editingDidEndOnExit" id="AAG-va-6MV"/>
-                                </connections>
-                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -554,7 +554,7 @@
         <image name="yokudekimasshita.png" width="420" height="42"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="aAH-Qc-HWx"/>
+        <segue reference="TGU-Na-enw"/>
         <segue reference="uoN-6c-8xP"/>
     </inferredMetricsTieBreakers>
 </document>

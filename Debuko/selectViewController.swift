@@ -12,16 +12,17 @@ class selectViewController: UIViewController {
 
     @IBOutlet weak var NameTextField: UILabel!
     
-    var defaults = NSUserDefaults.standardUserDefaults()
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
     // Do any additional setup after loading the view.
-        var name2: AnyObject = defaults.objectForKey("nameString")!
-        println("\(name2)")
+        var defaults = NSUserDefaults.standardUserDefaults()
+        var name2:String = defaults.stringForKey("nameString")!
         NameTextField.text="\(name2)"
-        
-    }
+        println("\(name2)")
+        defaults.synchronize()
+        }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

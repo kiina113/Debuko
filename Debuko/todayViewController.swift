@@ -11,7 +11,7 @@ import UIKit
 class todayViewController: UIViewController {
     
     @IBOutlet var todayTextField : UITextField!
-    var todayWeight = 35.0
+   
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,13 +19,13 @@ class todayViewController: UIViewController {
         // Do any additional setup after loading the view.
         
         var todayDefault = NSUserDefaults.standardUserDefaults()
-        todayDefault.setDouble(todayWeight, forKey: "todayDouble")
+        todayDefault.setDouble(35.0, forKey: "todayDouble")
         todayDefault.synchronize()
     }
 
     @IBAction func tapGobt(sender: UITextField){
         var todayDefault = NSUserDefaults.standardUserDefaults()
-        var todayWeight2: AnyObject = todayDefault.objectForKey("todayDouble")!
+        var todayWeight: Double = todayDefault.doubleForKey("todayDouble")
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

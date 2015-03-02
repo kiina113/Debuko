@@ -11,36 +11,39 @@ import UIKit
 class ViewController: UIViewController {
     
     @IBOutlet weak var nameTextField: UITextField!
-    var name = "名前"
     @IBOutlet weak var highTextField: UITextField!
-    var high = 150.0
     @IBOutlet weak var weightTextField: UITextField!
-    var weight = 35.0
     @IBOutlet weak var aimTextField: UITextField!
-    var aim = 30.0
+    
 
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.        
         var defaults = NSUserDefaults.standardUserDefaults()
+        var name = "名前"
         defaults.setObject(name, forKey:"nameString")
-        defaults.setDouble(high, forKey: "highDouble")
-        defaults.setDouble(weight, forKey: "weightDouble")
-        defaults.setDouble(aim, forKey: "aimDouble")
+        defaults.setDouble(150.0, forKey: "highDouble")
+        defaults.setDouble(60.0, forKey: "weightDouble")
+        defaults.setDouble(35.0, forKey: "aimDouble")
         defaults.synchronize()
+        
+       
                    }
+    
+    
+    
     override func viewWillAppear(animated: Bool){
         //ユーザーデフォルトを用意
         var defaults = NSUserDefaults.standardUserDefaults()
         //データを読み出し
-        var name2: AnyObject = defaults.objectForKey("nameString")!
-        var high2: AnyObject = defaults.doubleForKey("highDouble")
-        var weghit2: AnyObject = defaults.doubleForKey("weightDouble")
-        var aim2: AnyObject = defaults.doubleForKey("aimDouble")
+        var name2: String = defaults.stringForKey("nameString")!
+        var high: Double = defaults.doubleForKey("highDouble")
+        var weghit: Double = defaults.doubleForKey("weightDouble")
+        var aim: Double = defaults.doubleForKey("aimDouble")
         
-
     }
+    
     
     
     @IBAction func tapNextbt(sender: UITextField) {

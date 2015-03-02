@@ -12,7 +12,7 @@ class todayViewController2: UIViewController {
     
     //脱デブまでアウトレット
     @IBOutlet weak var label: UILabel!
-    var number = 0
+    
     //ディフォルト
     var defaults = NSUserDefaults.standardUserDefaults()
     
@@ -20,11 +20,12 @@ class todayViewController2: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        label.text = "\(number)"
-        var aim2 : Double = defaults.doubleForKey("aimDouble")
+        
+        var aim : Double = defaults.doubleForKey("aimDouble")
         var todayWeight : Double = defaults.doubleForKey("todayDouble")
-        label.text="\(todayWeight - aim2)"
-        println("\(todayWeight - aim2)")
+        label.text="\(todayWeight - aim)"
+        defaults.synchronize()
+        println("\(todayWeight - aim)")
     }
     
     override func didReceiveMemoryWarning() {
