@@ -17,12 +17,19 @@ class selectViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     // Do any additional setup after loading the view.
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        
         var defaults = NSUserDefaults.standardUserDefaults()
-        var name2:String = defaults.stringForKey("nameString")!
+        var name2:AnyObject = defaults.objectForKey("nameString")!
         NameTextField.text="\(name2)"
         println("\(name2)")
         defaults.synchronize()
-        }
+        
+    }
+        
+
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

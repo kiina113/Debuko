@@ -34,7 +34,7 @@ class CountViewController: UIViewController {
 //            self.presentViewController(myNextViewController, animated: true, completion: nil)
 //            
 
-            performSegueWithIdentifier("clear", sender: nil)
+            self.performSegueWithIdentifier("clear", sender: nil)
             
             
         }
