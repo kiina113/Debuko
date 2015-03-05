@@ -11,26 +11,23 @@ import UIKit
 class selectViewController: UIViewController {
 
     @IBOutlet weak var NameTextField: UILabel!
-    
+    var param = ""
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-    // Do any additional setup after loading the view.
+    // Do any additional setup after loading the view. 
+//        var defaults = NSUserDefaults.standardUserDefaults()
+//        var name2:AnyObject = defaults.objectForKey("nameString")!
+//        defaults.synchronize()
+//        NameTextField.text="\(name2)"
+//        println("\(name2)")
+//        
+        NameTextField.text = param
+
     }
     
-    override func viewWillAppear(animated: Bool) {
-        
-        var defaults = NSUserDefaults.standardUserDefaults()
-        var name2:AnyObject = defaults.objectForKey("nameString")!
-        NameTextField.text="\(name2)"
-        println("\(name2)")
-        defaults.synchronize()
-        
-    }
-        
-
-
+  
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

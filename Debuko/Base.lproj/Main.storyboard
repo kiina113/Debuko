@@ -88,20 +88,12 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="prin.ong.png" translatesAutoresizingMaskIntoConstraints="NO" id="smH-Cs-Nhs">
                                 <rect key="frame" x="255" y="49" width="49" height="82"/>
                             </imageView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="身長" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DZQ-4y-Lk5">
-                                <rect key="frame" x="112" y="169" width="97" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation" returnKeyType="next"/>
-                                <connections>
-                                    <action selector="tapNextbt2:" destination="lqJ-GI-XWf" eventType="editingDidEndOnExit" id="gqQ-jp-aEY"/>
-                                </connections>
-                            </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="体重" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GZZ-4b-Ryq">
                                 <rect key="frame" x="112" y="222" width="97" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation" returnKeyType="next"/>
                                 <connections>
-                                    <action selector="tapNextbt3:" destination="lqJ-GI-XWf" eventType="editingDidEndOnExit" id="NUb-ga-m3l"/>
+                                    <action selector="tapWeight:" destination="lqJ-GI-XWf" eventType="editingDidEndOnExit" id="U3g-tM-ZZt"/>
                                 </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="目標体重" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ukh-MD-54Q">
@@ -109,7 +101,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation" returnKeyType="go"/>
                                 <connections>
-                                    <action selector="tapNextbt4:" destination="lqJ-GI-XWf" eventType="editingDidEndOnExit" id="Ui2-av-rjh"/>
+                                    <action selector="tapAim:" destination="lqJ-GI-XWf" eventType="editingDidEndOnExit" id="Rtk-G4-xZ0"/>
                                 </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ohJ-uK-7Dd">
@@ -118,7 +110,8 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="ieR-fY-X7J" kind="presentation" id="TGU-Na-enw"/>
+                                    <action selector="tapKanryobt:" destination="lqJ-GI-XWf" eventType="touchUpInside" id="A2f-QN-D5o"/>
+                                    <segue destination="ieR-fY-X7J" kind="presentation" identifier="GoNextPage" id="P8c-71-KdW"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="shokisettei.png" translatesAutoresizingMaskIntoConstraints="NO" id="fgy-sb-De6">
@@ -132,7 +125,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="words" returnKeyType="next"/>
                                 <connections>
-                                    <action selector="tapNextbt:" destination="lqJ-GI-XWf" eventType="editingDidEndOnExit" id="VEW-FK-2kp"/>
+                                    <action selector="tapName:" destination="lqJ-GI-XWf" eventType="editingDidEndOnExit" id="AJL-D4-vj5"/>
                                 </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="cm" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DKK-b8-3f5">
@@ -159,20 +152,28 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="身長" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DZQ-4y-Lk5">
+                                <rect key="frame" x="112" y="169" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation" returnKeyType="next"/>
+                                <connections>
+                                    <action selector="tapHigh:" destination="lqJ-GI-XWf" eventType="editingDidEndOnExit" id="Icm-2d-ixp"/>
+                                </connections>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
-                        <outlet property="aimTextField" destination="ukh-MD-54Q" id="eqh-J5-pzc"/>
-                        <outlet property="highTextField" destination="DZQ-4y-Lk5" id="Y9R-2k-YED"/>
-                        <outlet property="nameTextField" destination="KoJ-6q-IPW" id="ES8-1a-qIX"/>
-                        <outlet property="weightTextField" destination="GZZ-4b-Ryq" id="227-Ct-nqG"/>
+                        <outlet property="aimTextField" destination="ukh-MD-54Q" id="c1a-nW-4W0"/>
+                        <outlet property="highTextField" destination="DZQ-4y-Lk5" id="ytW-s3-NIe"/>
+                        <outlet property="nameTextField" destination="KoJ-6q-IPW" id="Nj6-e8-lNz"/>
+                        <outlet property="weightTextField" destination="GZZ-4b-Ryq" id="zn4-ta-Pue"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZT7-o2-a9u" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="666" y="386"/>
+            <point key="canvasLocation" x="735" y="386"/>
         </scene>
         <!--Select View Controller-->
         <scene sceneID="nek-69-AOy">
@@ -255,7 +256,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zmd-DO-ZLc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1079" y="386"/>
+            <point key="canvasLocation" x="1137" y="386"/>
         </scene>
         <!--Today View Controller2-->
         <scene sceneID="URY-WI-VLk">
@@ -332,7 +333,6 @@
         <!--View Controller-->
         <scene sceneID="UrO-gq-thh">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="JZC-6V-bvF" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="pR8-3d-ZuE" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Mlw-rF-ErW"/>
@@ -386,6 +386,7 @@
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JZC-6V-bvF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1470" y="1078"/>
         </scene>
@@ -576,7 +577,7 @@
         <image name="yokudekimasshita.png" width="420" height="42"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="zcK-Q5-uFC"/>
-        <segue reference="QKP-LU-5wF"/>
+        <segue reference="P8c-71-KdW"/>
+        <segue reference="uoN-6c-8xP"/>
     </inferredMetricsTieBreakers>
 </document>
